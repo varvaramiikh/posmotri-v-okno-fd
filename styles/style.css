@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgb(217 217 217 / 10%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+}
+
+/* ------------------------- */
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.result__video-container {
+  width: 711px;
+  margin-bottom: 20px;
+}
+
+.result__video {
+  object-fit: cover;
+  width: 100%;
+  height: 386px;
+  margin-bottom: -10px; 
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset:first-of-type {
+  width: 225px;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__textfield {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 0;
+  border-left: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  height: 27px;
+  font-size: 18px;
+  width: 100%;
+  color: white;
+  margin-bottom: -2px;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__label:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid white;
+  margin-bottom: -4px;
+}
+
+input[type='checkbox']:checked + .search-form__pseudo-checkbox {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  outline: 1px solid white;
+  outline-offset: 1px;
+  margin: 1px;
+  margin-bottom: -3px;
+}
+
+.search-form__fieldset:last-of-type {
+  width: 212px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.button {
+  height: 34px;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 700;
+  font-size: 18px;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  margin-bottom: -2px;
+}
+
+.button:active {
+  background: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: Oswald;
+  font-weight: 700;
+  line-height: 0.94;
+}
+
+.content__accent {
+  color: #545050;
+  display: inline-block;
+  line-height: 0.7;
+  margin-top: 15px;
+}
+
+.content__list {
+  padding-left: 3px;
+}
+
+.content__list-container {
+  height: 298px;
+  overflow-y: auto;
+  margin-top: 22px;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  line-height: 1;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card:focus-visible { 
+  outline: 1px solid white;
+}
+
+.content__video-card-description-container {
+  padding-top: 6px;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Oswald;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.more-button {
+  width: 390px;
+}
