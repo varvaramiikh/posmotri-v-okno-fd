@@ -277,8 +277,8 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
   height: 103px;
+  width: 194px;
 }
 
 .more-button {
